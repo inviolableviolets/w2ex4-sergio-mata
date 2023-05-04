@@ -41,3 +41,24 @@ describe("Given a checkIfNumberIsEven function", () => {
     });
   });
 });
+
+describe("Given a checkIfNumberIsPrime function", () => {
+  describe("When it receive '7'", () => {
+    test("Then it should return true", () => {
+      const number = 7;
+
+      const expectedResult = index.checkIfNumberIsPrime(number);
+
+      expect(expectedResult).toBe(true);
+    });
+  });
+  describe("When it receive '4'", () => {
+    test("Then it should return false", () => {
+      const number = 4;
+
+      const expectedResult = index.checkIfNumberIsPrime(number);
+
+      expect(expectedResult).toBe(false);
+    });
+  });
+});

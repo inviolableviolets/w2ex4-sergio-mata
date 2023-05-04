@@ -30,10 +30,14 @@ const getHighestNumber = (numberList) => numberList.sort((b, a) => a - b)[0];
 const getLongestWord = (wordList) =>
   wordList.sort((b, a) => a.length - b.length)[0];
 
+const checkIfListIncludesNumber = (numberList, number) =>
+  numberList.includes(number);
+
 export default {
   checkIfContainsEveryVowel,
   checkIfNumberIsEven,
   checkIfNumberIsPrime,
   getHighestNumber,
   getLongestWord,
+  checkIfListIncludesNumber,
 };

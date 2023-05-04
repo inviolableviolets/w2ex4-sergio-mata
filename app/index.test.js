@@ -62,3 +62,16 @@ describe("Given a checkIfNumberIsPrime function", () => {
     });
   });
 });
+
+describe("Given a getHighestNumber function", () => {
+  describe("When it receive [1, 2, 3, 4, 5, 420]", () => {
+    test("Then it should return 420", () => {
+      const numberList = [1, 2, 3, 4, 5, 420];
+      const expectedNumber = 420;
+
+      const expectedResult = index.getHighestNumber(numberList);
+
+      expect(expectedResult).toBe(expectedNumber);
+    });
+  });
+});

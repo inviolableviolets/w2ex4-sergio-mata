@@ -25,11 +25,11 @@ const checkIfNumberIsPrime = (number) => {
   return isPrime;
 };
 
-const checkHighestNumber = (numberList) => numberList.sort((b, a) => a - b)[0];
+const getHighestNumber = (numberList) => numberList.sort((b, a) => a - b)[0];
 
 export default {
   checkIfContainsEveryVowel,
   checkIfNumberIsEven,
   checkIfNumberIsPrime,
-  checkHighestNumber,
+  getHighestNumber,
 };

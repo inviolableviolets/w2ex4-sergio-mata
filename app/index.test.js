@@ -75,3 +75,16 @@ describe("Given a getHighestNumber function", () => {
     });
   });
 });
+
+describe("Given a getLongestWord function", () => {
+  describe("When it receive ['hola', 'otorrinonaringólogo']", () => {
+    test("Then it should return 'otorrinonaringólogo'", () => {
+      const wordList = ["hola", "otorrinonaringólogo"];
+      const expectedWord = "otorrinonaringólogo";
+
+      const expectedResult = index.getLongestWord(wordList);
+
+      expect(expectedResult).toBe(expectedWord);
+    });
+  });
+});
